@@ -7,5 +7,5 @@ def display_lines(image,lines):
         for line in lines:
             x1,y1,x2,y2=line.reshape(4)
             cv2.line(lines_image,(x1,y1),(x2,y2),(0,255,0),9)
-    
+
     return lines_image
